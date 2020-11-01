@@ -9,14 +9,14 @@
 </head>
 <body>
 <center>
-        <h1 class="jumbotron text-center">
+        <h1>
           <img
             src="https://static1.squarespace.com/static/54813413e4b0034aade3a0bc/54814029e4b001b264ee1a7c/5d83f25b589d5d236679c059/1569355344830/cute-807306_1280.png?format=1500w"
             alt="Chatbot"
             style="width:40px;height:40px;"
           />IT chatbot
         </h1>     
-   <!----<h1 class="jumbotron text-center"> </h1>-->
+    <h1 class="jumbotron text-center"></h1>
 </center>
 <div class="container">
     <div class="row">
@@ -32,7 +32,7 @@
     </div>
 <script>
 
-    function getResponse() {
+    function get_bot_response() {
         let userText = $("#textInput").val();
         let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
       
@@ -44,6 +44,7 @@
         var botHtml = '<p class="botText"><span>' + JSON.stringify(data) + '</span></p>';
         $("#chatbox").append(botHtml);
         console.log(JSON.stringify(data));
+        alert(JSON.stringify(data))
         document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
 });
 }
@@ -51,11 +52,11 @@
    $("#textInput").keypress(function(e) {
     //if enter key is pressed
         if(e.which == 13) {
-            getResponse();
+            get_bot_response();
         }
     });
    $("#buttonInput").click(function() {
-        getResponse();
+        get_bot_response();
 
     });
     
