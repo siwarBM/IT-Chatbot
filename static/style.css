@@ -1,7 +1,7 @@
 #textInput {
     border: none;
-    border-bottom: 3px solid aqua;
-}
+    border-bottom: 3px solid #00A5E3;
+          }
 
 .userText {
     color: white;
@@ -9,21 +9,34 @@
     font-size: 17px;
     text-align: right;
     line-height: 30px;
-}
+        }
 .userText span {
-    background-color: #009688;
+    background-color: #cecece;
     padding: 10px;
-    border-radius: 2px;
-}
+    border-radius: 31px;
+      }
 .botText {
     color: white;
     font-family: monospace;
-    font-size: 17px;
+    font-size: 12px;
     text-align: left;
     line-height: 30px;
 }
 .botText span {
-    background-color: #EF5350;
+    background-color: #007bff;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 31px;
 }
+.copyright col{display: flex;
+               text-align: center;
+
+               color: #43425d;
+               font-weight: bold;
+               font-family: 'Comfortaa', cursive;
+              }
+.btn-success{
+     border-radius: 31px;
+      color : #007bff;}
+.border-success {
+        border-color: #0000FF!important;
+    }
