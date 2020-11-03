@@ -21,7 +21,7 @@
         },
         {"tag": "options",
          "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered","What services do you provide?","What can you help me with"],
-         "responses": ["I can guide you through\n 1)Password Reset\n2) Trouble-Shooting issues\n3) Virus Issues\n4) Printing Issues\n5) many more IT issues", "Offering support for \n1) Password Reset\n2) Trouble-Shooting issues\n3) Virus Issues\n4) Printer issues\n5) Other IT tasks"],
+         "responses": ["I can guide you through, 1)Password Reset, 2) Trouble-Shooting issues, n3) Virus Issues, 4) Printing Issues, 5) many more IT issues", "Offering support for 1) Password Reset 2) Trouble-Shooting issues 3) Virus Issues 4) Printer issues 5) Other IT tasks"],
          "context": [""]
         },
         {"tag": "Password Reset",
@@ -47,12 +47,12 @@
         },
         {"tag": "Unsaved Document",
          "patterns": ["I just closed my document without saving!","Unsaved Document","Forgot to save my work"],
-         "responses": ["However, all your work is not definitely lost. If you have Auto-Recover options enabled in Microsoft Office, then there are some easy steps to recover your work.\nIf not, you can also search for Word backup files by clicking “open”, “computer” and then browsing to the folder where the file was last saved.\nYou may also be able to find your file by performing a search on your computer for temporary files with a .tmp file extension or a ~ prefix."],
+         "responses": ["However, all your work is not definitely lost. If you have Auto-Recover options enabled in Microsoft Office, then there are some easy steps to recover your work.If not, you can also search for Word backup files by clicking “open”, “computer” and then browsing to the folder where the file was last saved.You may also be able to find your file by performing a search on your computer for temporary files with a .tmp file extension or a ~ prefix."],
          "context": [""]
         },
         {"tag": "Slow Computer",
          "patterns": ["Slow Computer", "My computer is running too slowly!", "Computer is not fast"],
-         "responses": ["Here are my 10 quick tips for things you can do to speed up your PC\n1. Cut down on start-up items\n2. Uninstall programs you no longer use\n3. Clean up your hard drive\n4. Clean your browser\n5. Scan for and remove malware\n6. Adjust for better performance\n7. Defrag your hard drive\n8. Add more RAM.\n9. Upgrade to an SSD drive\n10. Don’t shut down, use Hibernate "],
+         "responses": ["Here are my 10 quick tips for things you can do to speed up your PC 1. Cut down on start-up items  2. Uninstall programs you no longer use  3. Clean up your hard drive  4. Clean your browser 5. Scan for and remove malware\n6. Adjust for better performance\n7. Defrag your hard drive\n8. Add more RAM. 9. Upgrade to an SSD drive 10. Don’t shut down, use Hibernate "],
          "context": [""]
         },
         {"tag": "Unexpected Shut Down",
@@ -68,7 +68,7 @@
         },
         {"tag": "Vague",
          "patterns": ["Nothing works","I have issues","I need Help","I have problems"],
-         "responses": ["Hey, I cant seems that you have not listed you Issue here.\n I can help you out with the following issues: \n 1)Password Reset\n 2) Trouble-Shooting issues\n 3) Virus Issues \n 4)Printing Issues and many more IT issues"],
+         "responses": ["Hey, I cant seems that you have not listed you Issue here. I can help you out with the following issues: 1)Password Reset 2) Trouble-Shooting issues  3) Virus Issues  4)Printing Issues and many more IT issues"],
          "context": [""]
         },
         {"tag": "Virus",
@@ -78,12 +78,12 @@
         },
         {"tag": "Mouse",
          "patterns": ["My Mouse is not working","The mouse is dead","Bluetooth mouse not working","Mouse issues","trackpad not working","I need help with trackpad problems"],
-         "responses": ["a) If you encounter a mouse problem, you should first try these options:\n1) If it is a first-time issue, restarting your PC can resolve the issue instantly.\n2) Confirm that the mouse or the wireless adaptor is firmly connected to the PC.\n3) You may also try to unplug the mouse cable or the wireless adaptor and reconnect using a different port.\n4)Check the mouse and the ports for damages and even try the mouse on a different computer.\n4 If none of these solves the problem, you can now proceed to other solutions.\nb) Troubleshoot Hardware and Devices\nc) Updating Incompatible Mouse Drivers\nd) Roll Back or Reinstall Mouse Drivers\ne) Deactivate Enhanced Pointer Precision\nf) Adjusting the Mouse Sensitivity\ng) Configure Touchpad Delay\nh) Disable Touchpad"],
+         "responses": ["a) If you encounter a mouse problem, you should first try these options: 1) If it is a first-time issue, restarting your PC can resolve the issue instantly. 2) Confirm that the mouse or the wireless adaptor is firmly connected to the PC. 3) You may also try to unplug the mouse cable or the wireless adaptor and reconnect using a different port. 4)Check the mouse and the ports for damages and even try the mouse on a different computer.  If none of these solves the problem, you can now proceed to other solutions. b) Troubleshoot Hardware and Devices c) Updating Incompatible Mouse Drivers d) Roll Back or Reinstall Mouse Drivers e) Deactivate Enhanced Pointer Precision f) Adjusting the Mouse Sensitivity g) Configure Touchpad Delay h) Disable Touchpad"],
          "context": [""]
         },
         {"tag": "USB",
          "patterns": ["My computer does not recognise my USB device!","Okay so i need help with pendrive","USB issues","Pendrive issues","pendrive is not detected"],
-         "responses": ["First things to check are:\n1) Does the device work in a different USB port on the machine?\n2) Are other devices recognised in that port?\n3) Does the device work on another user’s machine?\n If you have tried these troubleshooting methods and still no luck, then your IT support help-desk can proceed with some more in-depth troubleshooting."],
+         "responses": ["First things to check are: 1) Does the device work in a different USB port on the machine? 2) Are other devices recognised in that port? 3) Does the device work on another user’s machine?  If you have tried these troubleshooting methods and still no luck, then your IT support help-desk can proceed with some more in-depth troubleshooting."],
          "context": [""]
         },
         {"tag": "Slow Internet",

@@ -7,49 +7,42 @@ import pickle
 import numpy as np
 
 from keras.models import load_model
-model = load_model('chatbot_model.h5')
+model = load_model('model.h5')
 import json
 import random
 #intents = json.loads(open('intents.json').read())
 intents=json.loads(open('intents.json',encoding="utf8").read())
-words = pickle.load(open('words.pkl','rb'))
+Vocabs = pickle.load(open('Vocabs.pkl','rb'))
 classes = pickle.load(open('classes.pkl','rb'))
 
 
 def clean_up_sentence(sentence):
-    # tokenize the pattern - splitting words into array
-    sentence_words = nltk.word_tokenize(sentence)
-    # stemming every word - reducing to base form
-    sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
-    return sentence_words
+    S_word = nltk.word_tokenize(sentence) #split words in array
+    S_word = [lemmatizer.lemmatize(word.lower()) for word in S_word] # stemming sentence
+    return S_word
 
-
-# return bag of words array: 0 or 1 for words that exist in sentence
-def bag_of_words(sentence, words, show_details=True):
-    # tokenizing patterns
-    sentence_words = clean_up_sentence(sentence)
-    # bag of words - vocabulary matrix
-    bag = [0]*len(words)  
-    for s in sentence_words:
-        for i,word in enumerate(words):
+def bag_of_words(sentence, Vocabs, show_details=True):
+    
+    S_word = clean_up_sentence(sentence)
+    bag = [0]*len(Vocabs)  
+    for s in S_word:
+        for i,word in enumerate(Vocabs):
             if word == s: 
-                # assign 1 if current word is in the vocabulary position
-                bag[i] = 1
+                bag[i] = 1 # give 1 if current word £ vocabs position
                 if show_details:
-                    print ("found in bag: %s" % word)
-    return(np.array(bag))
+                    print ("found in bag: %s" % Vocabs)
+    return(np.array(bag)) # result = list of 0 and 1 for each word that exist in sentence of user
 
 def predict_class(sentence):
-    # filter below  threshold predictions
-    p = bag_of_words(sentence, words,show_details=False)
-    res = model.predict(np.array([p]))[0]
+    p = bag_of_words(sentence, Vocabs,show_details=False)
+    res = model.predict(np.array([p]))[0] #prediction
     ERROR_THRESHOLD = 0.25
-    results = [[i,r] for i,r in enumerate(res) if r>ERROR_THRESHOLD]
+    probs = [[i,r] for i,r in enumerate(res) if r>ERROR_THRESHOLD]
     # sorting strength probability
-    results.sort(key=lambda x: x[1], reverse=True)
+    probs.sort(key=lambda x: x[1], reverse=True)
     return_list = []
-    for r in results:
-        return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
+    for res in probs:
+        return_list.append({"intent": classes[res[0]], "probability": str(res[1])}) #high probability
     return return_list
 @app.route("/")
 def home():
