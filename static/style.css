@@ -1,3 +1,18 @@
+body{
+    background: #caedf8;
+}
+header {
+    height: 60px;
+    background: #fff;
+    color: #03283B;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    box-shadow: 10px 0 5px #b9b7b7;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
 #textInput {
     border: none;
     border-bottom: 3px solid #00A5E3;
@@ -11,21 +26,23 @@
     line-height: 30px;
         }
 .userText span {
-    background-color: #cecece;
+    background-color: #466EB6;
     padding: 10px;
     border-radius: 31px;
       }
 .botText {
-    color: white;
+    color: #fff;
     font-family: monospace;
     font-size: 12px;
     text-align: left;
     line-height: 30px;
 }
 .botText span {
-    background-color: #007bff;
+    background-color:#6522A4;
     padding: 10px;
     border-radius: 31px;
+    
+    margin: 5px 0;
 }
 .copyright col{display: flex;
                text-align: center;
@@ -35,8 +52,9 @@
                font-family: 'Comfortaa', cursive;
               }
 .btn-success{
-     border-radius: 31px;
-      color : #007bff;}
+     
+      color : black;}
 .border-success {
         border-color: #0000FF!important;
+        margin-top: 120px;
     }
