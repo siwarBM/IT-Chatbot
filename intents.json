@@ -52,7 +52,7 @@
         },
         {"tag": "Slow Computer",
          "patterns": ["Slow Computer", "My computer is running too slowly!", "Computer is not fast"],
-         "responses": ["Here are my 10 quick tips for things you can do to speed up your PC 1. Cut down on start-up items  2. Uninstall programs you no longer use  3. Clean up your hard drive  4. Clean your browser 5. Scan for and remove malware\n6. Adjust for better performance\n7. Defrag your hard drive\n8. Add more RAM. 9. Upgrade to an SSD drive 10. Don’t shut down, use Hibernate "],
+         "responses": ["Here are my 10 quick tips for things you can do to speed up your PC 1. Cut down on start-up items  2. Uninstall programs you no longer use  3. Clean up your hard drive  4. Clean your browser 5. Scan for and remove malware 6. Adjust for better performance\n7. Defrag your hard drive 8. Add more RAM. 9. Upgrade to an SSD drive 10. Don’t shut down, use Hibernate "],
          "context": [""]
         },
         {"tag": "Unexpected Shut Down",
@@ -73,7 +73,7 @@
         },
         {"tag": "Virus",
          "patterns": ["I have virus in my laptop","Virus issues","Computer has a virus","I have problems"],
-         "responses": ["A detailed step by step guide to remove the virus from the computer has been provided on the following link: \nhttps://www.easeus.com/file-recovery/remove-virus-without-antivirus.html \nand\nhttps://www.pcworld.com/article/243818/how-to-remove-malware-from-your-windows-pc.html\nIf the issues are still there, consult the IT team"],
+         "responses": ["A detailed step by step guide to remove the virus from the computer has been provided on the following link: \nhttps://www.easeus.com/file-recovery/remove-virus-without-antivirus.html \nand\nhttps://www.pcworld.com/article/243818/how-to-remove-malware-from-your-windows-pc.html If the issues are still there, consult the IT team"],
          "context": [""]
         },
         {"tag": "Mouse",
